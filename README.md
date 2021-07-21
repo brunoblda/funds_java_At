@@ -1,19 +1,19 @@
 # Infnet - AT - Fundamentos de Desenvolvimento Java
 Assessement da matéria de fundamentos de desenvolvimento Java
 
-##Apresentação
+## Apresentação
 Dev, você precisa construir um sistema idealizado por você que siga a modelagem abaixo:
 
 ![Diagrama de Classes Professor](images/uml_professor.png)
 
-###O diagrama
+### O diagrama
 
 Neste diagrama temos sete classes mas apenas seis precisam ser implementadas:
 Pedido, Solicitante, Produto, Bebida, Comida e Sobremesa.
 
 Fiquem ligados que este projeto não pode ser implementado por você, mas seguir de modelo para a sua especificação. Você precisa seguir exatamente a modelagem de classes mas definindo as entidades do seu negócio.
 
-###A demanda
+### A demanda
 
 Crie um projeto Spring Boot e organize em três pacotes: model.domain, model.exceptions, model.tests. No pacote model.domain: crie as seis classes; no pacote model.exceptions: crie pelo menos três classes de exceção, uma para cada classe filha; no pacote model.tests: crie três classes de teste, uma para a classe principal (Pedido, no meu caso), outra para a classe de associação (Solicitante, no meu caso) e uma para a classe mãe (Produto, no meu caso).
 
@@ -34,7 +34,7 @@ Siga as orientações existentes no trello no conteúdo das semanas 9 e 10. Nas 
 
 Recupere o projeto modelo existente no repositório do git e comece a codar!!
 
-##Projeto
+## Projeto Desenvolvido
 
 Loja que vende roupas, sapatos e mochilas - appVestuarioSA
 
