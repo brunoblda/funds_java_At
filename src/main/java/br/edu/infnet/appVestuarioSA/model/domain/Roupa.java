@@ -99,7 +99,6 @@ public class Roupa extends Produto {
 		if(this.tecido.isBlank()) {
 		   throw new TecidoNaoPreenchidoException("Não tem informação do tecido");
 		}
-		
 	
 		float valorReturn;
 		

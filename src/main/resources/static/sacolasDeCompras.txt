@@ -1,4 +1,4 @@
-C;2;Jose Carlos;783.876.456-09;meuemail@email.com;(61)6598-7845
+C;2;Eu sou o douglas;783.876.456-09;meuemail@email.com;(61)6598-7845
 R;7;Calça Jeans tracejada em cinza;100;Calça Jeans;azul;algodão;M;true
 S;4;Sapato social de couro;100;couro;preto;42;true
 M;6;mochila escolar resistente;100;Algodão;verde;3;EsTudante

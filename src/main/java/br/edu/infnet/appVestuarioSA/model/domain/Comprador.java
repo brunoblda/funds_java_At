@@ -12,7 +12,7 @@ public class Comprador {
 		
 	}
 	
-	public Comprador(int id, String nome, String Cpf, String email, String telefone, String senha) {
+	public Comprador(int id, String nome, String Cpf, String email, String telefone ) {
 		this.id = id;
 		this.nome = nome;
 		this.Cpf = Cpf;

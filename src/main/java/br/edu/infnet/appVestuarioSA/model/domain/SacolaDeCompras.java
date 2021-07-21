@@ -19,6 +19,12 @@ public class SacolaDeCompras {
 		this.comprador = comprador;
 	}
 	
+	
+	public String obterSacola() {
+		
+		return String.format("Sacola de compras do %s realizada em %s",this.comprador.getNome(), this.data.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm")));
+		
+	}
 	@Override
 	public String toString() {
 		

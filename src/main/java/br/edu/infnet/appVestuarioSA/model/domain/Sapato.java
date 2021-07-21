@@ -1,7 +1,6 @@
 package br.edu.infnet.appVestuarioSA.model.domain;
 
-import br.edu.infnet.appVestuarioSA.model.exceptions.MaterialSapatoNaoPreenchido;
-import br.edu.infnet.appVestuarioSA.model.exceptions.TecidoNaoPreenchidoException;
+import br.edu.infnet.appVestuarioSA.model.exceptions.MaterialSapatoNaoPreenchidoException;
 
 public class Sapato extends Produto {
 
@@ -40,15 +39,12 @@ public class Sapato extends Produto {
 		return sb.toString();
 	}
 
-
-	
-	
 	@Override
-	public float calcularValorPromocional() throws MaterialSapatoNaoPreenchido {
+	public float calcularValorPromocional() throws MaterialSapatoNaoPreenchidoException {
 		
 		
 		if(this.materialSapato.isBlank()) {
-			   throw new MaterialSapatoNaoPreenchido("Não tem informação do tecido");
+			   throw new MaterialSapatoNaoPreenchidoException("Sem informações sobre o material do sapato");
 			}	
 		
 		float valorReturn;
@@ -58,7 +54,6 @@ public class Sapato extends Produto {
 		}else {
 			valorReturn = this.valor;
 		}
-		
 		
 		return valorReturn;
 	}

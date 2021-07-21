@@ -1,6 +1,5 @@
 package br.edu.infnet.appVestuarioSA.model.domain;
 
-import br.edu.infnet.appVestuarioSA.model.exceptions.MaterialSapatoNaoPreenchido;
 import br.edu.infnet.appVestuarioSA.model.exceptions.TipoDeAtividadeNaoPreenchidaException;
 
 public class Mochila extends Produto {

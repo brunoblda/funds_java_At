@@ -1,6 +1,6 @@
 package br.edu.infnet.appVestuarioSA.model.domain;
 
-import br.edu.infnet.appVestuarioSA.model.exceptions.MaterialSapatoNaoPreenchido;
+import br.edu.infnet.appVestuarioSA.model.exceptions.MaterialSapatoNaoPreenchidoException;
 import br.edu.infnet.appVestuarioSA.model.exceptions.TecidoNaoPreenchidoException;
 import br.edu.infnet.appVestuarioSA.model.exceptions.TipoDeAtividadeNaoPreenchidaException;
 
@@ -17,10 +17,10 @@ public abstract class Produto {
 		this.valor = valor;
 	}
 	
-	public abstract float calcularValorPromocional() throws TecidoNaoPreenchidoException, MaterialSapatoNaoPreenchido, TipoDeAtividadeNaoPreenchidaException;
+	public abstract float calcularValorPromocional() throws TecidoNaoPreenchidoException, MaterialSapatoNaoPreenchidoException, TipoDeAtividadeNaoPreenchidaException;
 	
 	
-	public String informarProduto() throws TecidoNaoPreenchidoException, MaterialSapatoNaoPreenchido, TipoDeAtividadeNaoPreenchidaException {
+	public String informarProduto() throws TecidoNaoPreenchidoException, TipoDeAtividadeNaoPreenchidaException, MaterialSapatoNaoPreenchidoException {
 		StringBuilder sb = new StringBuilder();
 		sb.append(this.descricao);
 		sb.append(";");
